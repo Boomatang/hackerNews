@@ -5,7 +5,10 @@ export default class NewList extends Component {
   render(){
 
     const list = this.props.posts.map((post, index) => (
-      <NewsItem key={index} post={post} />
+      <NewsItem key={index}
+                post={post}
+                upvoteHandler={this.props.upvoteHandler}
+      />
     ));
 
     return (
