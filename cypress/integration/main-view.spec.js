@@ -70,7 +70,7 @@ describe("Main View", () => {
     });
 
     it("adds a new item without a link", () => {
-      cy.get("button[type=submit]").click()
+      cy.get("button[type=submit]").click();
       cy.get("span.newsitem")
         .last()
         .contains("Sample title")

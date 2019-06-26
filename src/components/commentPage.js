@@ -24,7 +24,7 @@ class CommentPage extends Component {
     let pid = this.getId();
     let post = api.getPost(pid);
     let line = post.link?
-      <a href="{post.link">{post.title}</a> :
+      <a href={post.link}>{post.title}</a> :
       <span>{post.title}</span>;
     let comments = _.sortBy(post.comments,
       (comment) => - comment.upvotes);
